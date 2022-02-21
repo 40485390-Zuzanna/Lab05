@@ -1,3 +1,7 @@
+body{
+   padding: 2em;
+}
+
 .wrapper {
    display: flex;
    flex-flow: row wrap;
@@ -18,6 +22,27 @@
    background: lightgreen;
 }
 
-main {
-   
+.main {
+   text-align: left;  
+   background: deepskyblue;
+}
+
+.aside-1 {
+   background: gold;
+}
+.aside-2 {
+   background: hotpink;
+}
+
+@media all and (min-width:600px) {
+   .aside {flex:1 0 0};
+}
+
+@media all and(min-width:800px) {
+   .main{ flex:3 0 };
+   .aside-1 { order :1 };
+   .main { order :2 };
+   .aside-2 { order :2 };
+   .footer {order :5 };
+
 }
