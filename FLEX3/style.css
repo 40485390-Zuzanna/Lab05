@@ -15,7 +15,7 @@
 }
 
 .navigation a:hover {
-   background: darken(tomato, 2%);
+   background: darken(tomato, 20%);
 }
 
 @media all and (max-width: 800px){
